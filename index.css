@@ -1,13 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
+body.evolution-theme {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for readability */
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #212121; /* Darker header */
+    color: #e0e0e0;
     padding: 10px 0;
     text-align: center;
 }
@@ -21,11 +22,20 @@ section {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #212121; /* Darker footer */
+    color: #e0e0e0;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+a {
+    color: #bb86fc; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
