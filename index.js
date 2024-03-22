@@ -12,7 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     projects.forEach(project => {
         const listItem = document.createElement('li');
-        listItem.textContent = project;
+        const link = document.createElement('a');
+        link.setAttribute('href', `https://github.com/kelexine/${project}`);
+        link.innerText = project;
+
+        listItem.appendChild(link);
         projectList.appendChild(listItem);
     });
 });
